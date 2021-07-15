@@ -98,7 +98,8 @@ $mobilePopupMargin: 30px !default;
     // this must be full-height both for the hover highlight, and to push down the
     // dropdown so it appears below the input
     height: 100%;
-    padding: 0 $arrowPadding 0 $flagPadding;
+    // padding: 0 $arrowPadding 0 $flagPadding;
+    padding: 0 12px 0 12px;
   }
 
   &__arrow {
@@ -149,7 +150,7 @@ $mobilePopupMargin: 30px !default;
       white-space: normal;
     }
 
-    max-height: 200px;
+    max-height: 206px;
     overflow-y: scroll;
 
     // Fixes https://github.com/jackocnr/intl-tel-input/issues/765
@@ -167,15 +168,15 @@ $mobilePopupMargin: 30px !default;
 
   // the divider below the preferred countries
   &__divider {
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
     border-bottom: $borderWidth solid $greyBorder;
   }
 
   // each country item in dropdown (we must have separate class to differentiate from dividers)
   &__country {
     // Note: decided not to use line-height here for alignment because it causes issues e.g. large font-sizes will overlap, and also looks bad if one country overflows onto 2 lines
-    padding: 5px 10px;
+    padding: 6px 12px;
     outline: none;
   }
 
